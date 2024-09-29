@@ -26,6 +26,6 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/restaurant-management
+      SPRING_DATASOURCE_URL: ${JDBC_DATABASE_URL}
       SPRING_DATASOURCE_USERNAME: ${USER_POSTGRES}
       SPRING_DATASOURCE_PASSWORD: ${PASSWORD_POSTGRES}
